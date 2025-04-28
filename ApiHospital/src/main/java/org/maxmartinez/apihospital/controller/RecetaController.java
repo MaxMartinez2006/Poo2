@@ -15,24 +15,24 @@ import java.util.Optional;
 public class RecetaController {
 
     @Autowired
-    private org.maxmartinez.apihospital.controller.RecetaService recetaService;
+    private org.maxmartinez.apihospital.service.RecetaService recetaService;
 
     // GET: listar todas las recetas
     @GetMapping
     public List<Receta> listarRecetas() {
-        return recetaService.obtenerTodas();
+        return recetaService.obtenerTodasLasRecetas();
     }
 
     // GET: obtener receta por ID
     @GetMapping("/id")
     public ResponseEntity<Receta> obtenerPorId(@PathVariable Long id) {
-        Optional<Receta> receta = recetaService.obtenerPorId(id);
+        Optional<Receta> receta = recetaService.obtenerRecetaPorId(id);
         return receta.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     // POST: crear nueva receta
     @PostMapping
     public Receta crearReceta(@RequestBody Receta receta) {
-        return recetaService.guardar(receta);
+        return recetaService.guardarReceta(receta);
     }
 }

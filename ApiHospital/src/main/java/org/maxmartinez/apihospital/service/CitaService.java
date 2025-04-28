@@ -1,6 +1,7 @@
 package org.maxmartinez.apihospital.service;
 
 import org.maxmartinez.apihospital.model.Cita;
+import org.maxmartinez.apihospital.repository.CitaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

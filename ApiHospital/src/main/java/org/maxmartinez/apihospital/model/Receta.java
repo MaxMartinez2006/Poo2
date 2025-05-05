@@ -72,3 +72,6 @@ public class Receta {
         this.diagnostico = diagnostico;
     }
 }
+
+
+

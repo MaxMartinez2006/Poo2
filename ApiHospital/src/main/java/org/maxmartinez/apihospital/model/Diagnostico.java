@@ -68,3 +68,6 @@ public class Diagnostico {
         this.cita = cita;
     }
 }
+
+
+

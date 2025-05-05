@@ -34,3 +34,6 @@ public class MedicoService {
         medicoRepository.deleteById(id);
     }
 }
+
+
+

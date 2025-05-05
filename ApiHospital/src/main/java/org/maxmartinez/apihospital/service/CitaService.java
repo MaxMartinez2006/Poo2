@@ -34,3 +34,6 @@ public class CitaService {
         citaRepository.deleteById(id);
     }
 }
+
+
+

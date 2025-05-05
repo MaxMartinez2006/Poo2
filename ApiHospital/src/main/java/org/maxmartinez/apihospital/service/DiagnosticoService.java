@@ -34,3 +34,5 @@ public class DiagnosticoService {
         diagnosticoRepository.deleteById(id);
     }
 }
+
+

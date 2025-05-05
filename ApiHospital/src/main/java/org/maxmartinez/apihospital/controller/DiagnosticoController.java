@@ -36,3 +36,5 @@ public class DiagnosticoController {
         return diagnosticoService.guardar(diagnostico);
     }
 }
+
+
